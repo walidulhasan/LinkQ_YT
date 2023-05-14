@@ -1,0 +1,193 @@
+{
+  "format": 1,
+  "restore": {
+    "C:\\Users\\Robintex\\Desktop\\LinkQ_YT\\LinkQ_YT\\LinkQ_YT.csproj": {}
+  },
+  "projects": {
+    "C:\\Users\\Robintex\\Desktop\\LinkQ_YT\\LinkQ_YT\\LinkQ_YT.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "C:\\Users\\Robintex\\Desktop\\LinkQ_YT\\LinkQ_YT\\LinkQ_YT.csproj",
+        "projectName": "LinkQ_YT",
+        "projectPath": "C:\\Users\\Robintex\\Desktop\\LinkQ_YT\\LinkQ_YT\\LinkQ_YT.csproj",
+        "packagesPath": "C:\\Users\\Robintex\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\Robintex\\Desktop\\LinkQ_YT\\LinkQ_YT\\obj\\",
+        "projectStyle": "PackageReference",
+        "fallbackFolders": [
+          "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"
+        ],
+        "configFilePaths": [
+          "C:\\Users\\Robintex\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
+        ],
+        "originalTargetFrameworks": [
+          "net7.0"
+        ],
+        "sources": {
+          "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
+          "https://api.nuget.org/v3/index.json": {}
+        },
+        "frameworks": {
+          "net7.0": {
+            "targetAlias": "net7.0",
+            "projectReferences": {
+              "C:\\Users\\Robintex\\Desktop\\LinkQ_YT\\TCPData\\TCPData.csproj": {
+                "projectPath": "C:\\Users\\Robintex\\Desktop\\LinkQ_YT\\TCPData\\TCPData.csproj"
+              },
+              "C:\\Users\\Robintex\\Desktop\\LinkQ_YT\\TCPExtension\\TCPExtension.csproj": {
+                "projectPath": "C:\\Users\\Robintex\\Desktop\\LinkQ_YT\\TCPExtension\\TCPExtension.csproj"
+              }
+            }
+          }
+        },
+        "warningProperties": {
+          "warnAsError": [
+            "NU1605"
+          ]
+        }
+      },
+      "frameworks": {
+        "net7.0": {
+          "targetAlias": "net7.0",
+          "imports": [
+            "net461",
+            "net462",
+            "net47",
+            "net471",
+            "net472",
+            "net48",
+            "net481"
+          ],
+          "assetTargetFallback": true,
+          "warn": true,
+          "frameworkReferences": {
+            "Microsoft.NETCore.App": {
+              "privateAssets": "all"
+            }
+          },
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\7.0.203\\RuntimeIdentifierGraph.json"
+        }
+      }
+    },
+    "C:\\Users\\Robintex\\Desktop\\LinkQ_YT\\TCPData\\TCPData.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "C:\\Users\\Robintex\\Desktop\\LinkQ_YT\\TCPData\\TCPData.csproj",
+        "projectName": "TCPData",
+        "projectPath": "C:\\Users\\Robintex\\Desktop\\LinkQ_YT\\TCPData\\TCPData.csproj",
+        "packagesPath": "C:\\Users\\Robintex\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\Robintex\\Desktop\\LinkQ_YT\\TCPData\\obj\\",
+        "projectStyle": "PackageReference",
+        "fallbackFolders": [
+          "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"
+        ],
+        "configFilePaths": [
+          "C:\\Users\\Robintex\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
+        ],
+        "originalTargetFrameworks": [
+          "net7.0"
+        ],
+        "sources": {
+          "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
+          "https://api.nuget.org/v3/index.json": {}
+        },
+        "frameworks": {
+          "net7.0": {
+            "targetAlias": "net7.0",
+            "projectReferences": {}
+          }
+        },
+        "warningProperties": {
+          "warnAsError": [
+            "NU1605"
+          ]
+        }
+      },
+      "frameworks": {
+        "net7.0": {
+          "targetAlias": "net7.0",
+          "imports": [
+            "net461",
+            "net462",
+            "net47",
+            "net471",
+            "net472",
+            "net48",
+            "net481"
+          ],
+          "assetTargetFallback": true,
+          "warn": true,
+          "frameworkReferences": {
+            "Microsoft.NETCore.App": {
+              "privateAssets": "all"
+            }
+          },
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\7.0.203\\RuntimeIdentifierGraph.json"
+        }
+      }
+    },
+    "C:\\Users\\Robintex\\Desktop\\LinkQ_YT\\TCPExtension\\TCPExtension.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "C:\\Users\\Robintex\\Desktop\\LinkQ_YT\\TCPExtension\\TCPExtension.csproj",
+        "projectName": "TCPExtension",
+        "projectPath": "C:\\Users\\Robintex\\Desktop\\LinkQ_YT\\TCPExtension\\TCPExtension.csproj",
+        "packagesPath": "C:\\Users\\Robintex\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\Robintex\\Desktop\\LinkQ_YT\\TCPExtension\\obj\\",
+        "projectStyle": "PackageReference",
+        "fallbackFolders": [
+          "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"
+        ],
+        "configFilePaths": [
+          "C:\\Users\\Robintex\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
+        ],
+        "originalTargetFrameworks": [
+          "net7.0"
+        ],
+        "sources": {
+          "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
+          "https://api.nuget.org/v3/index.json": {}
+        },
+        "frameworks": {
+          "net7.0": {
+            "targetAlias": "net7.0",
+            "projectReferences": {
+              "C:\\Users\\Robintex\\Desktop\\LinkQ_YT\\TCPData\\TCPData.csproj": {
+                "projectPath": "C:\\Users\\Robintex\\Desktop\\LinkQ_YT\\TCPData\\TCPData.csproj"
+              }
+            }
+          }
+        },
+        "warningProperties": {
+          "warnAsError": [
+            "NU1605"
+          ]
+        }
+      },
+      "frameworks": {
+        "net7.0": {
+          "targetAlias": "net7.0",
+          "imports": [
+            "net461",
+            "net462",
+            "net47",
+            "net471",
+            "net472",
+            "net48",
+            "net481"
+          ],
+          "assetTargetFallback": true,
+          "warn": true,
+          "frameworkReferences": {
+            "Microsoft.NETCore.App": {
+              "privateAssets": "all"
+            }
+          },
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\7.0.203\\RuntimeIdentifierGraph.json"
+        }
+      }
+    }
+  }
+}

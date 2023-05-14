@@ -1,0 +1,12 @@
+C:\Users\Robintex\Desktop\LinkQ_YT\TCPData\bin\Debug\net7.0\TCPData.deps.json
+C:\Users\Robintex\Desktop\LinkQ_YT\TCPData\bin\Debug\net7.0\TCPData.dll
+C:\Users\Robintex\Desktop\LinkQ_YT\TCPData\bin\Debug\net7.0\TCPData.pdb
+C:\Users\Robintex\Desktop\LinkQ_YT\TCPData\obj\Debug\net7.0\TCPData.csproj.AssemblyReference.cache
+C:\Users\Robintex\Desktop\LinkQ_YT\TCPData\obj\Debug\net7.0\TCPData.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\Robintex\Desktop\LinkQ_YT\TCPData\obj\Debug\net7.0\TCPData.AssemblyInfoInputs.cache
+C:\Users\Robintex\Desktop\LinkQ_YT\TCPData\obj\Debug\net7.0\TCPData.AssemblyInfo.cs
+C:\Users\Robintex\Desktop\LinkQ_YT\TCPData\obj\Debug\net7.0\TCPData.csproj.CoreCompileInputs.cache
+C:\Users\Robintex\Desktop\LinkQ_YT\TCPData\obj\Debug\net7.0\TCPData.dll
+C:\Users\Robintex\Desktop\LinkQ_YT\TCPData\obj\Debug\net7.0\refint\TCPData.dll
+C:\Users\Robintex\Desktop\LinkQ_YT\TCPData\obj\Debug\net7.0\TCPData.pdb
+C:\Users\Robintex\Desktop\LinkQ_YT\TCPData\obj\Debug\net7.0\ref\TCPData.dll

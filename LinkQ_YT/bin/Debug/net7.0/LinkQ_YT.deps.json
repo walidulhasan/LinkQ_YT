@@ -1,0 +1,50 @@
+{
+  "runtimeTarget": {
+    "name": ".NETCoreApp,Version=v7.0",
+    "signature": ""
+  },
+  "compilationOptions": {},
+  "targets": {
+    ".NETCoreApp,Version=v7.0": {
+      "LinkQ_YT/1.0.0": {
+        "dependencies": {
+          "TCPData": "1.0.0",
+          "TCPExtension": "1.0.0"
+        },
+        "runtime": {
+          "LinkQ_YT.dll": {}
+        }
+      },
+      "TCPData/1.0.0": {
+        "runtime": {
+          "TCPData.dll": {}
+        }
+      },
+      "TCPExtension/1.0.0": {
+        "dependencies": {
+          "TCPData": "1.0.0"
+        },
+        "runtime": {
+          "TCPExtension.dll": {}
+        }
+      }
+    }
+  },
+  "libraries": {
+    "LinkQ_YT/1.0.0": {
+      "type": "project",
+      "serviceable": false,
+      "sha512": ""
+    },
+    "TCPData/1.0.0": {
+      "type": "project",
+      "serviceable": false,
+      "sha512": ""
+    },
+    "TCPExtension/1.0.0": {
+      "type": "project",
+      "serviceable": false,
+      "sha512": ""
+    }
+  }
+}
