@@ -127,22 +127,22 @@ List<Department> departmentList = Data.GetDepartments();
 
 //Group Join Operation Example -Method Syntex//
 
-var result = departmentList.GroupJoin(employeeList,
-    dep => dep.Id,
-    emp => emp.DepartmentId,
-    (dep, employeesGroup) => new
-    {
-        Employees = employeesGroup,
-        DepartmentName = dep.LongName
-    });
-foreach (var item in result)
-{
-    Console.WriteLine($"Department Name: {item.DepartmentName}");
-    foreach (var employee in item.Employees)
-    {
-        Console.WriteLine($"Employee Name: {employee.FirstName + " " + employee.LastName}");
-    }
-}
+//var result = departmentList.GroupJoin(employeeList,
+//    dep => dep.Id,
+//    emp => emp.DepartmentId,
+//    (dep, employeesGroup) => new
+//    {
+//        Employees = employeesGroup,
+//        DepartmentName = dep.LongName
+//    });
+//foreach (var item in result)
+//{
+//    Console.WriteLine($"Department Name: {item.DepartmentName}");
+//    foreach (var employee in item.Employees)
+//    {
+//        Console.WriteLine($"Employee Name: {employee.FirstName + " " + employee.LastName}");
+//    }
+//}
 
 
 #endregion
