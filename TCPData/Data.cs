@@ -1,4 +1,5 @@
 ﻿using System;
+using System.Collections;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
@@ -47,9 +48,19 @@ public static class Data
             Id = 4,
             FirstName = "Jamal",
             LastName = "Hossen",
-            AnnulSalary =20000.50m,
+            AnnulSalary =2000.50m,
             IsManager = false,
             DepartmentId = 3
+        };
+        list.Add(employee);
+        employee = new Employee
+        {
+            Id = 5,
+            FirstName = "Sumon",
+            LastName = "Tinku",
+            AnnulSalary = 200000.50m,
+            IsManager = false,
+            DepartmentId = 5
         };
 
         list.Add(employee);
@@ -79,8 +90,28 @@ public static class Data
                 ShortName = "TE",
                 LongName="Technology"
             },
+            new Department
+            {
+                Id=4,
+                ShortName = "MIS",
+                LongName="Management Information System"
+            },
+            new Department
+            {
+                Id=5,
+                ShortName = "AC",
+                LongName="Accounts"
+            },
+            new Department
+            {
+                Id=6,
+                ShortName = "IT",
+                LongName="Information Technology"
+            },
         };
         return list;
        
     }
+
+    
 }
