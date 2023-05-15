@@ -144,7 +144,24 @@ List<Department> departmentList = Data.GetDepartments();
 //    }
 //}
 
+//Group Join Operation Example -Query Syntex//
 
+var results = from dep in departmentList
+              join emp in employeeList
+              on dep.Id equals emp.DepartmentId into employeeGroup
+              select new
+              {
+                  Employees = employeeGroup,
+                  DepartmentName = dep.LongName
+              };
+foreach (var item in results)
+{
+    Console.WriteLine($"Department Name: {item.DepartmentName}");
+    foreach (var employee in item.Employees)
+    {
+        Console.WriteLine($"Employee Name: {employee.FirstName + " " + employee.LastName}");
+    }
+}
 #endregion
 
 
