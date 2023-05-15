@@ -171,6 +171,7 @@ List<Department> departmentList = Data.GetDepartments();
 
 
 #region LInQExamples_2
+
 #region Working List
 //Sorting Operators
 //OrderBy
@@ -389,19 +390,56 @@ List<Department> departmentList = Data.GetDepartments();
 
 //First, FirstOrDefault, Last, LastOrDefault,Single SingleOrDefault Operators
 
-List<int> integerList=new List<int> { 1, 13, 24, 17, 28 };
-List<string> names = new List<string> { "Alice", "Bob", "Bharlie" };
-int result=integerList.First(i=>i%2==0);
-int result1 = integerList.FirstOrDefault();
-int result2 = integerList.Last();
-int result3 = integerList.LastOrDefault();
-int result4 = integerList.Single(x => x == 13);
-string? result5 = names.SingleOrDefault(x =>x.StartsWith("B"));
-Console.WriteLine($"First: {result,-10} FirstOrDefault: {result1,-10} Last: {result2,-10} LastOrDefault: {result3,-10} Single: {result4,-10} SingleOrDefault: {result5,-10}");
+//List<int> integerList=new List<int> { 1, 13, 24, 17, 28 };
+//List<string> names = new List<string> { "Alice", "Bob", "Charlie" };
+//int result=integerList.First(i=>i%2==0);
+//int result1 = integerList.FirstOrDefault();
+//int result2 = integerList.Last();
+//int result3 = integerList.LastOrDefault();
+//int result4 = integerList.Single(x => x == 13);
+//string? result5 = names.SingleOrDefault(x =>x.StartsWith("B"));
+//Console.WriteLine($"First: {result,-10} FirstOrDefault: {result1,-10} Last: {result2,-10} LastOrDefault: {result3,-10} Single: {result4,-10} SingleOrDefault: {result5,-10}");
+
+
 
 
 
 #endregion
+
+#endregion
+
+#region LInQExamples_3
+#region Working List
+//Equality Operator
+//SequenceEqual
+
+//Concatenation Operator
+//Concat
+
+//Set Operators
+//Distinct, Except, Intersect and Union
+
+//Generiation OPerators
+//DefaultiEmpty, Empty, Range and Repeat
+
+//Aggregate Operators
+//Aggregate, Average, Count, Sum And Max
+
+//Partitioning OPerators
+//Skip, SkipWhile, Take and TakeWhile
+
+//Conversion Operators
+//ToLIst, ToDicitionary and ToArray
+
+//Projection Operators
+//Select and SelectMany
+
+//Keywords
+//Let
+//Into
+
+#endregion
+
 
 #endregion
 
