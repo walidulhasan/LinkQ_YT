@@ -440,7 +440,59 @@ List<Department> departmentList = Data.GetDepartments();
 
 #endregion
 
+#region Equality Operator
+//SequenceEqual
+//var integerListLeft=new List<int> {1,2,3,4,5,6,7,8,9};
+//var integerListRight = new List<int> { 1, 2, 3, 4, 5, 6, 7, 8, 9 };
 
+//var boolSequenceEqual = integerListLeft.SequenceEqual(integerListRight);
+//Console.WriteLine(boolSequenceEqual);
+#endregion
+
+#region Concatenation Operator
+
+//Concat
+//var integerListLeft=new List<int> {1,2,3,4,5,6,7,8,9};
+//var integerListRight = new List<int> { 1, 2, 3, 4, 5, 6, 7, 8, 9 };
+
+//IEnumerable<int> integerLIstConcat=integerListLeft.Concat(integerListRight);
+//foreach(var integer in integerLIstConcat)
+//    Console.WriteLine(integer);
+
+
+
+#endregion
+
+#region Aggregate Operators
+//Aggregate,Average,Count,Sum,Max
+
+//decimal totalAnnualSalary = employeeList.Aggregate<Employee, decimal>(0, (totalAnnualSalary, e) =>
+//{
+//    var bonus = (e.IsManager) ? 0.04m : 0.02m;
+//    totalAnnualSalary = (e.AnnulSalary + e.AnnulSalary * bonus) + totalAnnualSalary;
+//    return totalAnnualSalary;
+//});
+
+//Console.WriteLine($"Total Annual Salary of all employees (including bonus): {totalAnnualSalary}");
+
+//string data = employeeList.Aggregate<Employee, string>("Employee Annual Salaries (including Bonus):",
+//    (s, e) =>{
+//        var bonus = (e.IsManager) ? 0.04m : 0.02m;
+//        s += $"{e.FirstName,-10} {e.LastName,-10} - {e.AnnulSalary + (e.AnnulSalary * bonus)}\n\n\n";
+//        return s;
+//    });
+//Console.WriteLine(data);
+
+//Average//
+
+//decimal average = employeeList.Average(x => x.AnnulSalary);
+//decimal max = employeeList.Max(x => x.AnnulSalary);
+//decimal min = employeeList.Min(x => x.AnnulSalary);
+//decimal sum = employeeList.Sum(x => x.AnnulSalary);
+
+//Console.WriteLine($"\nMax Salary: {max}\nMin Salary:{min}\nAverage Salary:{average}\nTotal Salary:{sum}");
+
+#endregion
 #endregion
 
 
