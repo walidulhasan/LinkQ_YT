@@ -489,10 +489,19 @@ List<Department> departmentList = Data.GetDepartments();
 //decimal max = employeeList.Max(x => x.AnnulSalary);
 //decimal min = employeeList.Min(x => x.AnnulSalary);
 //decimal sum = employeeList.Sum(x => x.AnnulSalary);
+//int count = employeeList.Count();
 
-//Console.WriteLine($"\nMax Salary: {max}\nMin Salary:{min}\nAverage Salary:{average}\nTotal Salary:{sum}");
+//Console.WriteLine($"\nMax Salary: {max}\nMin Salary:{min}\nAverage Salary:{average}\nTotal Salary:{sum}\nCount:{count}");
 
 #endregion
+
+#region Generiation OPerators
+
+//DefaultiEmpty, Empty, Range and Repeat
+
+
+#endregion
+
 #endregion
 
 
