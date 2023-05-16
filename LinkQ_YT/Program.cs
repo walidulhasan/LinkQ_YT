@@ -410,6 +410,7 @@ List<Department> departmentList = Data.GetDepartments();
 #endregion
 
 #region LInQExamples_3
+
 #region Working List
 //Equality Operator
 //SequenceEqual
@@ -667,11 +668,11 @@ List<Department> departmentList = Data.GetDepartments();
 
 //SelectMany//
 
-var datas = employeeList.SelectMany(d => d.FirstName);
-foreach (var items in datas)
-{
-    Console.WriteLine(items);
-}
+//var datas = employeeList.SelectMany(d => d.FirstName);
+//foreach (var items in datas)
+//{
+//    Console.WriteLine(items);
+//}
 #endregion
 
 #endregion
