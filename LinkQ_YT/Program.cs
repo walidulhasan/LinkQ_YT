@@ -1,5 +1,6 @@
 ﻿// See https://aka.ms/new-console-template for more information
 using System.Collections;
+using System.Collections.Generic;
 using System.Diagnostics.CodeAnalysis;
 using System.Linq;
 using TCPData;
@@ -495,11 +496,182 @@ List<Department> departmentList = Data.GetDepartments();
 
 #endregion
 
-#region Generiation OPerators
+#region Generiation OPerators (DefaultiEmpty, Empty, Range and Repeat)
 
-//DefaultiEmpty, Empty, Range and Repeat
+//DefaultiEmpty//
+
+//List<Employee> employees = new List<Employee> { new Employee { Id=1} };
+//var newList = employees.DefaultIfEmpty();
+//var result = newList.ElementAt(0);
+//if (result?.Id>0)
+//{
+//    Console.WriteLine($"Result:{result.Id}");
+//}
+//else
+//{
+//    Console.WriteLine("Result is Empty");
+//}
+
+//Empty//
+
+//List<Employee> emptyEmployeeList=Enumerable.Empty<Employee>().ToList();
+//employeeList.Add(new Employee { Id=10,FirstName="Korim",LastName="Miya"});
+//foreach(var employee in employeeList)
+//{
+//    Console.WriteLine(employee.FirstName);
+//}
+
+//Range//
+//var intCollection = Enumerable.Range(1, 100);
+//foreach (var number in intCollection)
+//{
+//    Console.WriteLine(number);
+//}
+
+//Repeat//
+//var strCollection = Enumerable.Repeat<string>("Placeholder",10000);
+//foreach (var repeter in strCollection)
+//{
+//    Console.WriteLine(repeter);
+//}
 
 
+
+
+#endregion
+
+#region Set Operators (Distinct, Except, Intersect and Union)
+
+//Distinct//
+
+//var intList=new List<int>{1,2,3,4,4,5,5,5,4,56,4,};
+//var distinctIntList=intList.Distinct();
+//foreach (var item in distinctIntList)
+//{
+//    Console.WriteLine(item);
+//}
+
+//The Except() method requires two collections. It returns a new collection with elements from the first collection which do not exist in the second collection (parameter collection).//
+
+//IEnumerable<int> collection1 = new List<int> { 1, 2, 3, 4,10,12,16,5,6};
+//IEnumerable<int> collection2 = new List<int> { 1,2,5,6 };
+//var result=collection1.Except(collection2).ToList();
+//foreach (var item in result)
+//{
+//    Console.WriteLine(item);
+//}
+
+//The Intersect()  method requires two collections. It returns a new collection with elements from the first collection which do exist in the second collection (parameter collection).//
+
+//IEnumerable<int> collection1 = new List<int> { 1, 2, 3, 4, 10, 12, 16, 5, 6,7 };
+//IEnumerable<int> collection2 = new List<int> { 1, 2, 5, 6,7 };
+//var result = collection1.Intersect(collection2).ToList();
+//foreach (var item in result)
+//{
+//    Console.WriteLine(item);
+//}
+
+//Union//
+//IEnumerable<int> collection1 = new List<int> { 1, 2, 3, 4, 10, 12, 16, 5, 6, 7 };
+//IEnumerable<int> collection2 = new List<int> { 1, 2, 5, 6,7 };
+//var result = collection1.Union(collection2).ToList();
+//foreach (var item in result)
+//{
+//    Console.WriteLine(item);
+//}
+
+
+#endregion
+
+#region Partitioning OPerators (Skip, SkipWhile,SkipLast Take and )
+//Skip//
+//var result = employeeList.Skip(3);
+//foreach (var employee in result)
+//    Console.WriteLine(employee.Id+" "+employee.FirstName+" "+employee.LastName);
+
+//SkipWhile//
+//var result = employeeList.SkipWhile(x=>x.Id==1);
+//foreach (var employee in result)
+//   Console.WriteLine(employee.Id+" "+employee.FirstName+" "+employee.LastName);
+
+//Take//
+//var result = employeeList.Take(10);
+//foreach (var employee in result)
+//    Console.WriteLine(employee.Id + " " + employee.FirstName + " " + employee.LastName);
+
+//TakeWhile//
+//var result = employeeList.TakeWhile(x=>x.AnnulSalary>200000);
+//foreach (var employee in result)
+//    Console.WriteLine(employee.Id + " " + employee.FirstName + " " + employee.LastName);
+
+#endregion
+
+#region Conversion Operators (ToLIst, ToDicitionary and ToArray)
+
+//ToLIst//
+//var datas = employeeList.Where(x => x.AnnulSalary > 20000).ToList();
+//var data = (from employee in employeeList
+//           where employee.AnnulSalary > 200000
+//           select employee).ToList();
+
+//foreach (var item in datas)
+//{
+//    Console.WriteLine(item.FirstName);
+//}
+
+
+//Dictionary<int,Employee> dictionary = (from emp in employeeList
+//                                      where emp.AnnulSalary>40000
+//                                      select emp).ToDictionary<Employee,int>(x=>x.Id);
+//foreach (var item in dictionary.Keys)
+//{
+//    Console.WriteLine(dictionary[item].FirstName);
+//}
+
+//ToArray//
+
+//var datas = employeeList.Where(x => x.AnnulSalary > 20000).ToArray();
+//var data = (from employee in employeeList
+//            where employee.AnnulSalary > 200000
+//            select employee).ToArray();
+
+//foreach (var item in datas)
+//{
+//    Console.WriteLine(item.FirstName);
+//}
+#endregion
+
+#region Let Clause and Into Clause
+//Let//
+//---------//
+//Into//
+//var results = from emp in employeeList
+//              where emp.AnnulSalary > 50000
+//              select emp
+//              into HighEarners
+//              where HighEarners.IsManager==true
+//              select HighEarners;
+//foreach (var items in results)
+//    Console.WriteLine($"{items.Id,-5} {items.FirstName,-10} {items.LastName,-10} {items.AnnulSalary,-10}");
+
+#endregion
+
+#region Projection Operators - Select,SelectMany
+//Select//
+
+//var datas = employeeList.Select(d => d.FirstName);
+//foreach (var items in datas)
+//{
+//    Console.WriteLine(items);
+//}
+
+//SelectMany//
+
+var datas = employeeList.SelectMany(d => d.FirstName);
+foreach (var items in datas)
+{
+    Console.WriteLine(items);
+}
 #endregion
 
 #endregion
